@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Downloads latest Skype disk image, builds a package, and uploads to the JSS.</string>
+	<string>Uses parent pkg recipe to download latest GoogleChrome and import it into the JSS.</string>
 	<key>Identifier</key>
-	<string>com.github.txhaflaire.jss.Skype</string>
+	<string>com.github.txhaflaire.jss.GoogleChrome</string>
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
@@ -13,47 +13,40 @@
 		<key>GROUP_NAME</key>
 		<string>Patch Reporting: %NAME%</string>
 		<key>GROUP_TEMPLATE</key>
-		<string>SkypeSmartGroupTemplate.xml</string>
+		<string>ChromeSmartGroupTemplate.xml</string>
 		<key>NAME</key>
-		<string>Skype</string>
+		<string>VirtualBox</string>
 		<key>POLICY_CATEGORY</key>
 		<string>Automatic Patch Management</string>
 		<key>POLICY_TEMPLATE</key>
-		<string>PolicyTemplate.xml</string>
+		<string>VirtualBoxPolicyTemplate.xml</string>
 		<key>POLICY_TRIGGER</key>
-		<string></string>
+		<string>Install_VirtualBoxUpdate</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
 		<string>Install the latest version of %NAME%.</string>
 		<key>SELF_SERVICE_ICON</key>
-		<string>Skype.png</string>
+		<string></string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>0.4.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.autopkg.pkg.Skype</string>
+	<string>com.github.sheagcraig.pkg.VirtualBox</string>
 	<key>Process</key>
 	<array>
 		<dict>
 			<key>Arguments</key>
 			<dict>
 				<key>input_plist_path</key>
-				<string>%RECIPE_CACHE_DIR%/%NAME%/Applications/%NAME%.app/Contents/Info.plist</string>
+				<string>%RECIPE_CACHE_DIR%/%NAME%/Applications/VirtualBox.app/Contents/Info.plist</string>
 			</dict>
 			<key>Processor</key>
-			<string>com.github.autopkg.novaksam-recipes.Processors/MinimumOSExtractor</string>
+			<string>JSSImporter</string>
 		</dict>
 		<dict>
 			<key>Arguments</key>
 			<dict>
 				<key>category</key>
 				<string>%CATEGORY%</string>
-				<key>extension_attributes</key>
-				<array>
-					<dict>
-						<key>ext_attribute_path</key>
-						<string>SkypeExtensionAttribute.xml</string>
-					</dict>
-				</array>
 				<key>groups</key>
 				<array>
 					<dict>
@@ -65,8 +58,6 @@
 						<string>%GROUP_TEMPLATE%</string>
 					</dict>
 				</array>
-				<key>os_requirements</key>
-				<string>%OS_REQUIREMENTS%</string>
 				<key>policy_category</key>
 				<string>%POLICY_CATEGORY%</string>
 				<key>policy_template</key>
@@ -79,8 +70,6 @@
 				<string>%SELF_SERVICE_DESCRIPTION%</string>
 				<key>self_service_icon</key>
 				<string>%SELF_SERVICE_ICON%</string>
-				<key>version</key>
-				<string>%version%</string>
 			</dict>
 			<key>Processor</key>
 			<string>JSSImporter</string>
