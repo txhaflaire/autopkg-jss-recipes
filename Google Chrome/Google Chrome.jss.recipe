@@ -19,7 +19,7 @@
 		<key>POLICY_CATEGORY</key>
 		<string>Automatic Patch Management</string>
 		<key>POLICY_TEMPLATE</key>
-		<string>PolicyTemplate.xml</string>
+		<string>ChromePolicyTemplate.xml</string>
 		<key>POLICY_TRIGGER</key>
 		<string>Install_Chrome</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>

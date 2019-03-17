@@ -15,7 +15,7 @@
 		<key>GROUP_TEMPLATE</key>
 		<string>Jamf ProSmartGroupTemplate.xml</string>
 		<key>NAME</key>
-		<string>Jamf Pro</string>
+		<string>JamfPro</string>
 		<key>POLICY_CATEGORY</key>
 		<string>Automatic Patch Management</string>
 		<key>POLICY_TEMPLATE</key>
