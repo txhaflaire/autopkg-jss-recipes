@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Downloads Adobe Flash Player installer and extracts the embedded package, uploads to JSS.</string>
+	<string>Downloads Dropbox disk image and builds a package, then uploads to the JSS.</string>
 	<key>Identifier</key>
-	<string>com.github.txhaflaire.jss.AdobeFlashPlayer</string>
+	<string>com.github.txhaflaire.jss.Dropbox</string>
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
@@ -13,24 +13,24 @@
 		<key>GROUP_NAME</key>
 		<string>Patch Reporting: %NAME%</string>
 		<key>GROUP_TEMPLATE</key>
-		<string>Adobe Flash PlayerSmartGroupTemplate.xml</string>
+		<string>SmartGroupTemplate.xml</string>
 		<key>NAME</key>
-		<string>AdobeFlashPlayer</string>
+		<string>Dropbox</string>
 		<key>POLICY_CATEGORY</key>
 		<string>Automatic Patch Management</string>
 		<key>POLICY_TEMPLATE</key>
 		<string>PolicyTemplate.xml</string>
 		<key>POLICY_TRIGGER</key>
-		<string>Install_AdobeFlashPlayer</string>
+		<string>Install_Dropbox</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
-		<string>Install the latest version of Adobe Flash Player.</string>
+		<string>Install the latest version of %NAME%.</string>
 		<key>SELF_SERVICE_ICON</key>
-		<string>Adobe Flash Player.png</string>
+		<string>Dropbox.png</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>0.4.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.autopkg.pkg.FlashPlayerExtractPackage</string>
+	<string>com.github.autopkg.pkg.dropbox</string>
 	<key>Process</key>
 	<array>
 		<dict>
@@ -38,13 +38,6 @@
 			<dict>
 				<key>category</key>
 				<string>%CATEGORY%</string>
-				<key>extension_attributes</key>
-				<array>
-					<dict>
-						<key>ext_attribute_path</key>
-						<string>Adobe Flash PlayerExtensionAttribute.xml</string>
-					</dict>
-				</array>
 				<key>groups</key>
 				<array>
 					<dict>
@@ -68,6 +61,8 @@
 				<string>%SELF_SERVICE_DESCRIPTION%</string>
 				<key>self_service_icon</key>
 				<string>%SELF_SERVICE_ICON%</string>
+				<key>version</key>
+				<string>%version%</string>
 			</dict>
 			<key>Processor</key>
 			<string>JSSImporter</string>

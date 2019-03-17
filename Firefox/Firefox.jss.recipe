@@ -3,9 +3,15 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Downloads Adobe Flash Player installer and extracts the embedded package, uploads to JSS.</string>
+	<string>Downloads Firefox disk image and builds a package, then uploads to the JSS.
+Values for FIREFOX_BUILD correspond to directories here: http://download-origin.cdn.mozilla.net/pub/mozilla.org/firefox/releases/
+Some useful values are: 'latest', 'latest-10.0esr', 'latest-esr', 'latest-3.6', 'latest-beta'
+LOCALE corresponds to directories at http://download-origin.cdn.mozilla.net/pub/mozilla.org/firefox/releases/$FIREFOX_BUILD/mac/
+Examples include 'en-US', 'de', 'ja-JP-mac', 'sv-SE', and 'zh-TW'
+No idea if all Firefox builds are available in all the same localizations, so you may need to verify that any particular
+combination is offered.</string>
 	<key>Identifier</key>
-	<string>com.github.txhaflaire.jss.AdobeFlashPlayer</string>
+	<string>com.github.txhaflaire.jss.Firefox</string>
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
@@ -13,38 +19,40 @@
 		<key>GROUP_NAME</key>
 		<string>Patch Reporting: %NAME%</string>
 		<key>GROUP_TEMPLATE</key>
-		<string>Adobe Flash PlayerSmartGroupTemplate.xml</string>
+		<string>SmartGroupTemplate-MinimumOS.xml</string>
 		<key>NAME</key>
-		<string>AdobeFlashPlayer</string>
+		<string>Firefox</string>
 		<key>POLICY_CATEGORY</key>
 		<string>Automatic Patch Management</string>
 		<key>POLICY_TEMPLATE</key>
 		<string>PolicyTemplate.xml</string>
 		<key>POLICY_TRIGGER</key>
-		<string>Install_AdobeFlashPlayer</string>
+		<string>Install_Firefox</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
-		<string>Install the latest version of Adobe Flash Player.</string>
+		<string>Install the latest version of %NAME%.</string>
 		<key>SELF_SERVICE_ICON</key>
-		<string>Adobe Flash Player.png</string>
+		<string>Firefox.png</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>0.4.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.autopkg.pkg.FlashPlayerExtractPackage</string>
+	<string>com.github.autopkg.pkg.Firefox_EN</string>
 	<key>Process</key>
 	<array>
 		<dict>
 			<key>Arguments</key>
 			<dict>
+				<key>input_plist_path</key>
+				<string>%RECIPE_CACHE_DIR%/%NAME%/Applications/%NAME%.app/Contents/Info.plist</string>
+			</dict>
+			<key>Processor</key>
+			<string>com.github.autopkg.novaksam-recipes.Processors/MinimumOSExtractor</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
 				<key>category</key>
 				<string>%CATEGORY%</string>
-				<key>extension_attributes</key>
-				<array>
-					<dict>
-						<key>ext_attribute_path</key>
-						<string>Adobe Flash PlayerExtensionAttribute.xml</string>
-					</dict>
-				</array>
 				<key>groups</key>
 				<array>
 					<dict>
@@ -56,6 +64,8 @@
 						<string>%GROUP_TEMPLATE%</string>
 					</dict>
 				</array>
+				<key>os_requirements</key>
+				<string>%OS_REQUIREMENTS%</string>
 				<key>policy_category</key>
 				<string>%POLICY_CATEGORY%</string>
 				<key>policy_template</key>

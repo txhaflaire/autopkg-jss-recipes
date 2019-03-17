@@ -19,9 +19,9 @@
 		<key>POLICY_CATEGORY</key>
 		<string>Automatic Patch Management</string>
 		<key>POLICY_TEMPLATE</key>
-		<string>Adobe AIRPolicyTemplate.xml</string>
+		<string>PolicyTemplate.xml</string>
 		<key>POLICY_TRIGGER</key>
-		<string>Install_AIR</string>
+		<string>Install_AdobeAIR</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
 		<string>Install the latest version of Adobe AIR.</string>
 		<key>SELF_SERVICE_ICON</key>
