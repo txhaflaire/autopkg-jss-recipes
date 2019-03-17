@@ -13,19 +13,23 @@
 		<key>GROUP_NAME</key>
 		<string>Patch Reporting: %NAME%</string>
 		<key>GROUP_TEMPLATE</key>
-		<string>SkypeSmartGroupTemplate.xml</string>
+		<string>SmartGroupTemplate.xml</string>
 		<key>NAME</key>
 		<string>Skype</string>
+		<key>OS_REQUIREMENTS</key>
+		<string>10.13.x,10.12.x,10.11.x,10.10.x,10.9.x</string>
 		<key>POLICY_CATEGORY</key>
 		<string>Automatic Patch Management</string>
 		<key>POLICY_TEMPLATE</key>
 		<string>PolicyTemplate.xml</string>
-		<key>POLICY_TRIGGER</key>
-		<string></string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
-		<string>Install the latest version of %NAME%.</string>
+		<string>Skype is a freemium voice over IP service and instant messaging client, currently developed by Microsoft-owned Skype Technologies.</string>
 		<key>SELF_SERVICE_ICON</key>
 		<string>Skype.png</string>
+		<key>Comment</key>
+		<string>Note: PlistReader without variable injection in AutoPkg requires setting "version" input key to an empty string, as below.</string>
+		<key>version</key>
+		<string></string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>0.4.0</string>
@@ -36,22 +40,13 @@
 		<dict>
 			<key>Arguments</key>
 			<dict>
-				<key>input_plist_path</key>
-				<string>%RECIPE_CACHE_DIR%/%NAME%/Applications/%NAME%.app/Contents/Info.plist</string>
-			</dict>
-			<key>Processor</key>
-			<string>com.github.autopkg.novaksam-recipes.Processors/MinimumOSExtractor</string>
-		</dict>
-		<dict>
-			<key>Arguments</key>
-			<dict>
 				<key>category</key>
 				<string>%CATEGORY%</string>
 				<key>extension_attributes</key>
 				<array>
 					<dict>
 						<key>ext_attribute_path</key>
-						<string>SkypeExtensionAttribute.xml</string>
+						<string>CFBundleVersionExtensionAttribute.xml</string>
 					</dict>
 				</array>
 				<key>groups</key>
@@ -71,16 +66,12 @@
 				<string>%POLICY_CATEGORY%</string>
 				<key>policy_template</key>
 				<string>%POLICY_TEMPLATE%</string>
-				<key>policy_trigger</key>
-				<string>%POLICY_TRIGGER%</string>
 				<key>prod_name</key>
 				<string>%NAME%</string>
 				<key>self_service_description</key>
 				<string>%SELF_SERVICE_DESCRIPTION%</string>
 				<key>self_service_icon</key>
 				<string>%SELF_SERVICE_ICON%</string>
-				<key>version</key>
-				<string>%version%</string>
 			</dict>
 			<key>Processor</key>
 			<string>JSSImporter</string>
