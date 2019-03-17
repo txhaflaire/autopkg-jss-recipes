@@ -17,11 +17,11 @@
 			<value>%VERSION%</value>
 		</criterion>
 		<criterion>
-			<name>Computer Group</name>
+			<name>Alerter - Installation Status</name>
 			<priority>2</priority>
 			<and_or>and</and_or>
-			<search_type>member of</search_type>
-			<value>Testing</value>
+			<search_type>is</search_type>
+			<value>Installed</value>
 		</criterion>
 		<criterion>
 			<name>Operating System Version</name>
