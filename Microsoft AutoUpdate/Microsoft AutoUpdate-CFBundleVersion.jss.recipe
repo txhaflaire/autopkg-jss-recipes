@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads Microsoft Auto Update installer and grabs the shortened version, and uploads to JSS.</string>
 	<key>Identifier</key>
-	<string>com.github.novaksam.jss.MicrosoftAutoUpdateCFBundleVersion</string>
+	<string>com.github.txhaflaire.jss.MicrosoftAutoUpdateCFBundleVersion</string>
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
@@ -21,7 +21,7 @@
 		<key>POLICY_TEMPLATE</key>
 		<string>PolicyTemplate.xml</string>
 		<key>POLICY_TRIGGER</key>
-		<string>Install_MicrosoftAutoUpdate</string>
+		<string></string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
 		<string>Install the latest version of Microsoft AutoUpdate</string>
 		<key>SELF_SERVICE_ICON</key>

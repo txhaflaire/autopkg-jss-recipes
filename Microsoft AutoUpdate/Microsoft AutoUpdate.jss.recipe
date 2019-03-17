@@ -5,23 +5,23 @@
 	<key>Description</key>
 	<string>Downloads Microsoft Auto Update installer and grabs the shortened version, and uploads to JSS.</string>
 	<key>Identifier</key>
-	<string>com.github.novaksam.jss.MicrosoftAutoUpdate</string>
+	<string>com.github.txhaflaire.jss.MicrosoftAutoUpdate</string>
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
-		<string>Office</string>
+		<string>Software - Licensed</string>
 		<key>GROUP_NAME</key>
-		<string>%NAME%-update-smart</string>
+		<string>Patch Reporting: Microsoft AutoUpdate</string>
 		<key>GROUP_TEMPLATE</key>
 		<string>Microsoft AutoUpdateSmartGroupTemplate.xml</string>
 		<key>NAME</key>
-		<string>Microsoft AutoUpdate</string>
+		<string>MSAutoUpdate</string>
 		<key>POLICY_CATEGORY</key>
-		<string>Testing</string>
+		<string>Automatic Patch Management</string>
 		<key>POLICY_TEMPLATE</key>
 		<string>PolicyTemplate.xml</string>
 		<key>POLICY_TRIGGER</key>
-		<string>Install_MicrosoftAutoUpdate</string>
+		<string></string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
 		<string>Install the latest version of Microsoft AutoUpdate</string>
 		<key>SELF_SERVICE_ICON</key>
