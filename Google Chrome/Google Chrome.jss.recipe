@@ -13,7 +13,7 @@
 		<key>GROUP_NAME</key>
 		<string>Patch Reporting: %NAME%</string>
 		<key>GROUP_TEMPLATE</key>
-		<string>SmartGroupTemplate-MinimumOS.xml</string>
+		<string>ChromeSmartGroupTemplate.xml</string>
 		<key>NAME</key>
 		<string>GoogleChrome</string>
 		<key>POLICY_CATEGORY</key>
@@ -21,7 +21,7 @@
 		<key>POLICY_TEMPLATE</key>
 		<string>ChromePolicyTemplate.xml</string>
 		<key>POLICY_TRIGGER</key>
-		<string>Install_Chrome</string>
+		<string>Install_ChromeUpdate</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
 		<string>Install the latest version of %NAME%.</string>
 		<key>SELF_SERVICE_ICON</key>

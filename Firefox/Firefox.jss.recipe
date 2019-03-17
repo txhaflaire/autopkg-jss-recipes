@@ -27,7 +27,7 @@ combination is offered.</string>
 		<key>POLICY_TEMPLATE</key>
 		<string>FirefoxPolicyTemplate.xml</string>
 		<key>POLICY_TRIGGER</key>
-		<string>Install_Firefox</string>
+		<string>Install_FirefoxUpdate</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
 		<string>Install the latest version of %NAME%.</string>
 		<key>SELF_SERVICE_ICON</key>
