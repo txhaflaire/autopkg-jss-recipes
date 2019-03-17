@@ -20,6 +20,8 @@
 		<string>Automatic Patch Management</string>
 		<key>POLICY_TEMPLATE</key>
 		<string>VirtualBoxPolicyTemplate.xml</string>
+		<key>POLICY_TRIGGER</key>
+		<string>Install_VirtualBoxUpdate</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
 		<string>VirtualBox is a powerful x86 and AMD64/Intel64 virtualization product for enterprise as well as home use.</string>
 		<key>SELF_SERVICE_ICON</key>
