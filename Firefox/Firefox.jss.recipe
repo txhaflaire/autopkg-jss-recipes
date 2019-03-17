@@ -19,7 +19,7 @@ combination is offered.</string>
 		<key>GROUP_NAME</key>
 		<string>Patch Reporting: %NAME%</string>
 		<key>GROUP_TEMPLATE</key>
-		<string>SmartGroupTemplate-MinimumOS.xml</string>
+		<string>FirefoxSmartGroupTemplate.xml</string>
 		<key>NAME</key>
 		<string>Firefox</string>
 		<key>POLICY_CATEGORY</key>
