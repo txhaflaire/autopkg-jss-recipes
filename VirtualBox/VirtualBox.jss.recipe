@@ -13,7 +13,7 @@
 		<key>GROUP_NAME</key>
 		<string>Patch Reporting: %NAME%</string>
 		<key>GROUP_TEMPLATE</key>
-		<string>SmartGroupTemplate.xml</string>
+		<string>VirtualBoxSmartGroupTemplate.xml</string>
 		<key>NAME</key>
 		<string>VirtualBox</string>
 		<key>POLICY_CATEGORY</key>
@@ -39,8 +39,6 @@
 				<key>input_plist_path</key>
 				<string>%RECIPE_CACHE_DIR%/%NAME%/Applications/VirtualBox.app/Contents/Info.plist</string>
 			</dict>
-			<key>Processor</key>
-			<string>com.github.autopkg.novaksam-recipes.Processors/MinimumOSExtractor</string>
 		</dict>
 		<dict>
 			<key>Arguments</key>
