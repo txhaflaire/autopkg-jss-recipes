@@ -13,7 +13,7 @@
 		<key>GROUP_NAME</key>
 		<string>Patch Reporting: %NAME%</string>
 		<key>GROUP_TEMPLATE</key>
-		<string>SmartGroupTemplate.xml</string>
+		<string>MicrosoftTeamsSmartGroupTemplate.xml</string>
 		<key>NAME</key>
 		<string>MSTeams</string>
 		<key>POLICY_CATEGORY</key>
