@@ -16,5 +16,12 @@
 			<search_type>is not</search_type>
 			<value>%VERSION%</value>
 		</criterion>
+		<criterion>
+			<name>Alerter - Installation Status</name>
+			<priority>2</priority>
+			<and_or>and</and_or>
+			<search_type>is</search_type>
+			<value>Installed</value>
+		</criterion>
 	</criteria>
 </computer_group>
