@@ -13,13 +13,13 @@
 		<key>GROUP_NAME</key>
 		<string>Patch Reporting: %NAME%</string>
 		<key>GROUP_TEMPLATE</key>
-		<string>VisualCodeStudioSmartGroupTemplate.xml</string>
+		<string>VisualStudioCodeSmartGroupTemplate.xml</string>
 		<key>NAME</key>
 		<string>Visual Studio Code</string>
 		<key>POLICY_CATEGORY</key>
 		<string>Automatic Patch Management</string>
 		<key>POLICY_TEMPLATE</key>
-		<string>VisualCodeStudioPolicyTemplate.xml</string>
+		<string>VisualStudioCodePolicyTemplate.xml</string>
 		<key>POLICY_TRIGGER</key>
 		<string>Install_VisualCodeStudioUpdate</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
