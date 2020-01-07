@@ -7,7 +7,7 @@
 	<key>Description</key>
 	<string>Downloads the latest version of Brave and imports it into your JSS.</string>
 	<key>Identifier</key>
-	<string>com.github.jss-recipes.jss.Brave</string>
+	<string>com.github.txhaflaire.jss.Brave</string>
 	<key>Input</key>
 	<dict>
 		<key>APP_FILENAME</key>
