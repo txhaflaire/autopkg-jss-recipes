@@ -64,8 +64,6 @@ combination is offered.</string>
 						<string>%GROUP_TEMPLATE%</string>
 					</dict>
 				</array>
-				<key>os_requirements</key>
-				<string>%OS_REQUIREMENTS%</string>
 				<key>policy_category</key>
 				<string>%POLICY_CATEGORY%</string>
 				<key>policy_template</key>
