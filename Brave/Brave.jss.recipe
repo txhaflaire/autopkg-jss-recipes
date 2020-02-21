@@ -61,7 +61,7 @@
 					</dict>
 				</array>
 				<key>jss_inventory_name</key>
-				<string>Brave Browser</string>
+				<string>BraveBrowser</string>
 				<key>policy_category</key>
 				<string>%POLICY_CATEGORY%</string>
 				<key>policy_template</key>
