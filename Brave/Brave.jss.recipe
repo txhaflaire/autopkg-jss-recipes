@@ -17,13 +17,15 @@
 		<key>GROUP_NAME</key>
 		<string>Patch Reporting: %NAME%</string>
 		<key>GROUP_TEMPLATE</key>
-		<string>SmartGroupTemplate.xml</string>
+		<string>BraveSmartGroupTemplate.xml</string>
 		<key>NAME</key>
 		<string>Brave</string>
 		<key>POLICY_CATEGORY</key>
 		<string>Automatic Patch Management</string>
 		<key>POLICY_TEMPLATE</key>
-		<string>PolicyTemplate.xml</string>
+		<string>BravePolicyTemplate.xml</string>
+		<key>POLICY_TRIGGER</key>
+		<string>Install_BraveUpdate</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
 		<string>Brave Web Browser is a fast, free, secure web browser with a built-in ad blocker*, tracking and security protection, and optimized data and battery experience.</string>
 		<key>SELF_SERVICE_ICON</key>
