@@ -9,7 +9,7 @@
 			<search_type>is</search_type>
 			<value>Brave Browser.app</value>
 		</criterion>
-		<criterion>/Users/txhaflaire/Documents/GitHub/autopkg-jss-recipes/Brave/BravePolicyTemplate.xml
+		<criterion>
 			<name>Application Version</name>
 			<priority>1</priority>
 			<and_or>and</and_or>
