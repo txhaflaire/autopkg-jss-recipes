@@ -15,7 +15,7 @@
 		<key>DOWNLOAD_URL</key>
 		<string>https://dbeaver.io/files/dbeaver-ce-latest-installer.pkg</string>
 		<key>NAME</key>
-		<string>DBeaver Community</string>
+		<string>DBeaverCommunity</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
@@ -25,7 +25,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>filename</key>
-				<string>%NAME%.pkg</string>
+				<string>%NAME%-%VERSION%.pkg</string>
 				<key>url</key>
 				<string>%DOWNLOAD_URL%</string>
 			</dict>
