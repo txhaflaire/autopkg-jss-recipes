@@ -13,9 +13,9 @@
 		<key>APP_FILENAME</key>
 		<string>DBeaver</string>
 		<key>DOWNLOAD_URL</key>
-		<string>https://dbeaver.io/files/dbeaver-ce-latest-installer.pkg</string>
+		<string>https://dbeaver.io/files/dbeaver-ce-latest-macos.dmg</string>
 		<key>NAME</key>
-		<string>DBeaverCommunity</string>
+		<string>DBeaver Community</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
@@ -25,7 +25,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>filename</key>
-				<string>%NAME%-%VERSION%.pkg</string>
+				<string>%NAME%.dmg</string>
 				<key>url</key>
 				<string>%DOWNLOAD_URL%</string>
 			</dict>
@@ -39,17 +39,24 @@
 		<dict>
 			<key>Arguments</key>
 			<dict>
-				<key>expected_authority_names</key>
-				<array>
-					<string>Developer ID Installer: DBeaver Corporation (42B6MDKMW8)</string>
-					<string>Developer ID Certification Authority</string>
-					<string>Apple Root CA</string>
-				</array>
 				<key>input_path</key>
-				<string>%pathname%</string>
+				<string>%pathname%/DBeaver.app</string>
+				<key>requirement</key>
+				<string>identifier "org.jkiss.dbeaver.core.product" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "42B6MDKMW8"</string>
 			</dict>
 			<key>Processor</key>
 			<string>CodeSignatureVerifier</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>input_plist_path</key>
+				<string>%pathname%/DBeaver.app/Contents/Info.plist</string>
+				<key>plist_version_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+			<key>Processor</key>
+			<string>Versioner</string>
 		</dict>
 	</array>
 </dict>
