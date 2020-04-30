@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Downloads the current release version of Cyberduck and builds a package. Then, uploads to the JSS.</string>
+	<string>Downloads the current release version of Discord and builds a package. Then, uploads to the JSS.</string>
 	<key>Identifier</key>
-	<string>com.github.txhaflaire.jss.Cyberduck</string>
+	<string>com.github.txhaflaire.jss.Discord</string>
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
@@ -21,14 +21,14 @@
 		<key>POLICY_TEMPLATE</key>
 		<string>PolicyTemplate.xml</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
-		<string>With an easy to use interface, connect to FTP, SFTP, WebDAV, Amazon S3, Google Storage, Windows Azure, Rackspace Cloud Files and even Google Docs.</string>
+		<string>Discord is the easiest way to communicate over voice, video, and text, whether you’re part of a school club, a nightly gaming group, a worldwide art community, or just a handful of friends that want to hang out.</string>
 		<key>SELF_SERVICE_ICON</key>
 		<string>Cyberduck.png</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>0.2.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.autopkg.pkg.Cyberduck</string>
+	<string>com.github.autopkg.mikestechshop.pkg.Discord</string>
 	<key>Process</key>
 	<array>
 		<dict>
