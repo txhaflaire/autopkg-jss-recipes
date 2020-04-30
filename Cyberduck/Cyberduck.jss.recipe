@@ -17,7 +17,7 @@
 		<key>NAME</key>
 		<string>Cyberduck</string>
 		<key>POLICY_CATEGORY</key>
-		<string>Automatic Patch Reporting</string>
+		<string>Automatic Patch Management</string>
 		<key>POLICY_TEMPLATE</key>
 		<string>PolicyTemplate.xml</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
