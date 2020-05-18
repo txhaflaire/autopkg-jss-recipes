@@ -24,7 +24,7 @@
   <key>MinimumVersion</key>
   <string>0.4.0</string>
   <key>ParentRecipe</key>
-  <string>com.github.mosen.download.IDEA-IU</string>
+  <string>com.github.txhaflaire.pkg.IntelliJIDEA</string>
   <key>Process</key>
   <array>
     <dict>
