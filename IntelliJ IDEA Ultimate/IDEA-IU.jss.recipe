@@ -10,8 +10,6 @@
   <dict>
     <key>CATEGORY</key>
     <string>Software - Licensed</string>
-    <key>GROUP_TEMPLATE</key>
-    <string>IntellijIDEASmartGroupTemplate.xml</string>
     <key>NAME</key>
     <string>IntelliJ Idea Ultimate</string>
     <key>POLICY_CATEGORY</key>
