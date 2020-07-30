@@ -18,3 +18,17 @@
 		</criterion>
 	</criteria>
 </computer_group>
+
+
+https://prod-133.westeurope.logic.azure.com:443/workflows/e6f725ac4742438db3f121a43c29ea18/triggers/manual/paths/invoke?api-version=2016-06-01&sp=/triggers/manual/run&sv=1.0&sig=mrZq9g8sc_Hg3ecPSH7DuWW7OYrWr3n7SI4obGSKE_s
+
+
+https://prod-110.westeurope.logic.azure.com:443/workflows/46a1ab52377f4d6baeb51f817fce43bf/triggers/manual/paths/invoke?api-version=2016-06-01&sp=/triggers/manual/run&sv=1.0&sig=LHLE1oTKtF8X_F8U3EYbQoGxpG9yP9GNwwezFDCYZ7Y
+
+https://prod-67.westeurope.logic.azure.com:443/workflows/fda5c66d31294d3e9abff4960a68b5a0/triggers/manual/paths/invoke?api-version=2016-06-01&sp=/triggers/manual/run&sv=1.0&sig=uWSMnhvPcRsCbrakH39RmPBwrAn8vdW8EYzHMf6hwvk
+
+https://prod-46.westeurope.logic.azure.com:443/workflows/964bb88ac2084c4cb95ee5114888834c/triggers/manual/paths/invoke?api-version=2016-06-01&sp=/triggers/manual/run&sv=1.0&sig=F6rECGqajTzOZDtd72QXtYP--FOPVGmwCuPJ7PxKhvg
+
+https://prod-165.westeurope.logic.azure.com:443/workflows/b4a4bd907c5f4ec29d2b441210a131b6/triggers/manual/paths/invoke?api-version=2016-06-01&sp=/triggers/manual/run&sv=1.0&sig=iST5bVFWs2XZ5NNDdnfJhY2RanmESDOI6FOe_UESnOQ
+
+https://prod-159.westeurope.logic.azure.com:443/workflows/20f57e7117a24b1880dabee1cad26487/triggers/manual/paths/invoke?api-version=2016-06-01&sp=/triggers/manual/run&sv=1.0&sig=xs08Rdpx0l3Tx_Q7SBduR8yvowPbh00bNER5y_2Gy8U
