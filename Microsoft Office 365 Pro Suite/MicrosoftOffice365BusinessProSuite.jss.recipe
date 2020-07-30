@@ -15,9 +15,13 @@
             <key>POLICY_CATEGORY</key>
             <string>Software - Unlicensed</string>
             <key>POLICY_TEMPLATE</key>
-            <string>%RECIPE_DIR%/PolicyTemplate.xml</string>
+            <string>%RECIPE_DIR%/SelfServicePolicyTemplate.xml</string>
             <key>ICON</key>
             <string>%RECIPE_DIR%/MicrosoftOffice365BusinessProSuite.png</string>
+            <key>GROUP_TEMPLATE</key>
+            <string>%RECIPE_DIR%/SelfServiceSmartGroupTemplate.xml</string>
+            <key>GROUP_NAME</key>
+            <string>All managed macOS devices</string>
             <key>DESCRIPTION</key>
             <string>Microsoft Office 365 is a software suite for word processing, spreadsheets, presentations, graphics and more.</string>
         </dict>
