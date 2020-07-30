@@ -25,10 +25,18 @@
 	</scripts>
 	<self_service>
 		<use_for_self_service>true</use_for_self_service>
+		<self_service_display_name>%PROD_NAME%</self_service_display_name>
 		<install_button_text>Install %VERSION%</install_button_text>
 		<self_service_description>%SELF_SERVICE_DESCRIPTION%</self_service_description>
 	</self_service>
 	<maintenance>
 		<recon>true</recon>
 	</maintenance>
+	<user_interaction>
+    <message_start>%PROD_NAME$ is currently installing.</message_start>
+    <allow_users_to_defer>false</allow_users_to_defer>
+    <allow_deferral_until_utc/>
+    <allow_deferral_minutes>0</allow_deferral_minutes>
+    <message_finish>%PROD_NAME% installation is finished.</message_finish>
+  </user_interaction>
 </policy>
