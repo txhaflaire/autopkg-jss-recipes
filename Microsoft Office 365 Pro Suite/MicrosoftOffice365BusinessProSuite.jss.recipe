@@ -28,7 +28,7 @@
         <key>MinimumVersion</key>
         <string>1.0.0</string>
         <key>ParentRecipe</key>
-        <string>com.github.rtrouton.pkg.MicrosoftOffice365BusinessProSuite</string>
+        <string>com.github.txhaflaire.pkg.MicrosoftOffice365BusinessProSuite</string>
         <key>Process</key>
         <array>
             <dict>
