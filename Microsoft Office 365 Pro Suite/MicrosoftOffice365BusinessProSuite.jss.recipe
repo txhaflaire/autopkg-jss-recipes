@@ -9,7 +9,7 @@
         <key>Input</key>
         <dict>
             <key>NAME</key>
-            <string>Microsoft Office 365 Business Pro Suite</string>
+            <string>MSOffice365BusinessProSuite</string>
             <key>CATEGORY</key>
             <string>Software - Licensed</string>
             <key>POLICY_CATEGORY</key>
