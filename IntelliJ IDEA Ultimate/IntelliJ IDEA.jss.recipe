@@ -15,7 +15,9 @@
     <key>POLICY_CATEGORY</key>
     <string>Software - Licensed</string>
     <key>POLICY_TEMPLATE</key>
-    <string>IntellijIDEAPolicyTemplate.xml</string>
+    <string>%RECIPE_DIR%/SelfServicePolicyTemplate.xml</string>
+    <key>GROUP_TEMPLATE</key>
+    <string>%RECIPE_DIR%/SelfServiceSmartGroupTemplate.xml</string>
     <key>SELF_SERVICE_DESCRIPTION</key>
     <string>Install the latest version of IntelliJ Idea Ultimate on your device.</string>
     <key>SELF_SERVICE_ICON</key>
