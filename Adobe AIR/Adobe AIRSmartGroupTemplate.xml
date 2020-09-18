@@ -6,8 +6,8 @@
 			<name>%PROD_NAME%</name>
 			<priority>0</priority>
 			<and_or>and</and_or>
-			<search_type>is not</search_type>
-			<value>%VERSION%</value>
+			<search_type>does not match regex</search_type>
+			<value>%version_regex%</value>
 		</criterion>
 		<criterion>
 			<name>%PROD_NAME%</name>

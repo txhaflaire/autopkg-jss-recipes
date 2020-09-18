@@ -13,8 +13,8 @@
 			<name>Application Version</name>
 			<priority>1</priority>
 			<and_or>and</and_or>
-			<search_type>not like</search_type>
-			<value>%VERSION%</value>
+			<search_type>does not match regex</search_type>
+			<value>%version_regex%</value>
 		</criterion>
 	</criteria>
 </computer_group>

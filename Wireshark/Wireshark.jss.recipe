@@ -33,6 +33,10 @@
 	<string>com.github.autopkg.cgerke-recipes.pkg.Wireshark</string>
 	<key>Process</key>
 	<array>
+	<dict>
+		<key>Processor</key>
+		<string>com.github.grahampugh.recipes.commonprocessors/VersionRegexGenerator</string>
+	</dict>
 		<dict>
 			<key>Arguments</key>
 			<dict>

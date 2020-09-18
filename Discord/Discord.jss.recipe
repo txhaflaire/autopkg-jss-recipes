@@ -30,6 +30,10 @@
 	<key>ParentRecipe</key>
 	<string>com.github.autopkg.mikestechshop.pkg.Discord</string>
 	<key>Process</key>
+	<dict>
+		<key>Processor</key>
+		<string>com.github.grahampugh.recipes.commonprocessors/VersionRegexGenerator</string>
+	</dict>
 	<array>
 		<dict>
 			<key>Arguments</key>

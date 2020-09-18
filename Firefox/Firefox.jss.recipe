@@ -39,6 +39,10 @@ combination is offered.</string>
 	<string>com.github.autopkg.pkg.Firefox_EN</string>
 	<key>Process</key>
 	<array>
+	<dict>
+		<key>Processor</key>
+		<string>com.github.grahampugh.recipes.commonprocessors/VersionRegexGenerator</string>
+	</dict>
 		<dict>
 			<key>Arguments</key>
 			<dict>

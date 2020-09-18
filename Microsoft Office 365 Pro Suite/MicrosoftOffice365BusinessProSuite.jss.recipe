@@ -31,6 +31,10 @@
         <string>com.github.txhaflaire.pkg.MicrosoftOffice365BusinessProSuite</string>
         <key>Process</key>
         <array>
+        <dict>
+		    <key>Processor</key>
+		    <string>com.github.grahampugh.recipes.commonprocessors/VersionRegexGenerator</string>
+	    </dict>
             <dict>
                 <key>Arguments</key>
                 <dict>

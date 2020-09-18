@@ -27,6 +27,10 @@
 	<string>com.github.txhaflaire.download.scout</string>
 	<key>Process</key>
 	<array>
+	<dict>
+		<key>Processor</key>
+		<string>com.github.grahampugh.recipes.commonprocessors/VersionRegexGenerator</string>
+	</dict>
 		<dict>
 			<key>Arguments</key>
 			<dict>

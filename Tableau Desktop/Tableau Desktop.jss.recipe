@@ -37,6 +37,10 @@
 	<string>com.github.gmarnin.pkg.tableau-desktop</string>
 	<key>Process</key>
 	<array>
+	<dict>
+		<key>Processor</key>
+		<string>com.github.grahampugh.recipes.commonprocessors/VersionRegexGenerator</string>
+	</dict>
 		<dict>
 			<key>Arguments</key>
 			<dict>
