@@ -35,10 +35,10 @@
 	<array>
 	<dict>
 	<key>Arguments</key>
-			<dict>
-				<key>version</key>
-				<string>%version%</string>
-			</dict>
+		<dict>
+			<key>version</key>
+		<string>%version%</string>
+		</dict>
 		<key>Processor</key>
 		<string>com.github.grahampugh.recipes.commonprocessors/VersionRegexGenerator</string>
 	</dict>

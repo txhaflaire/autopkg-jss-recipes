@@ -32,6 +32,11 @@
 	<key>Process</key>
 	<array>
 	<dict>
+		<key>Arguments</key>
+		<dict>
+			<key>version</key>
+		<string>%version%</string>
+		</dict>
 		<key>Processor</key>
 		<string>com.github.grahampugh.recipes.commonprocessors/VersionRegexGenerator</string>
 	</dict>
@@ -61,8 +66,6 @@
 				<string>%SELF_SERVICE_DESCRIPTION%</string>
 				<key>self_service_icon</key>
 				<string>%SELF_SERVICE_ICON%</string>
-				<key>version</key>
-				<string>%version%</string>
 			</dict>
 			<key>Processor</key>
 			<string>JSSImporter</string>
