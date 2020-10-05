@@ -23,6 +23,10 @@
     <array>
         <dict>
             <key>Processor</key>
+            <string>com.github.rtrouton.download.MicrosoftOffice365Suite/OfficeSuiteSKULessVersionProvider</string>
+        </dict>
+        <dict>
+            <key>Processor</key>
             <string>URLDownloader</string>
             <key>Arguments</key>
             <dict>
