@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Description</key>
+  <string>Downloads the current release version of Anaconda and imports into a JAMF Pro Server.</string>
+  <key>Identifier</key>
+  <string>com.github.txhaflaire.jss.Anaconda</string>
+  <key>Input</key>
+  <dict>
+    <key>CATEGORY</key>
+    <string>Software - Unlicensed</string>
+    <key>NAME</key>
+    <string>Anaconda</string>
+    <key>POLICY_CATEGORY</key>
+    <string>Software - Unlicensed</string>
+    <key>POLICY_TEMPLATE</key>
+    <string>%RECIPE_DIR%/SelfServicePolicyTemplate.xml</string>
+    <key>GROUP_TEMPLATE</key>
+    <string>%RECIPE_DIR%/SelfServiceSmartGroupTemplate.xml</string>
+    <key>SELF_SERVICE_DESCRIPTION</key>
+    <string>Install the latest version of %NAME% on your device.</string>
+    <key>SELF_SERVICE_ICON</key>
+    <string>Anaconda.png</string>
+  </dict>
+  <key>MinimumVersion</key>
+  <string>0.4.0</string>
+  <key>ParentRecipe</key>
+  <string>com.github.txhaflaire.download.Anaconda</string>
+  <key>Process</key>
+  <array>
+  <dict>
+		<key>Processor</key>
+		<string>com.github.grahampugh.recipes.commonprocessors/VersionRegexGenerator</string>
+	</dict>
+    <dict>
+      <key>Arguments</key>
+      <dict>
+        <key>category</key>
+        <string>%CATEGORY%</string>
+        <key>policy_category</key>
+        <string>%POLICY_CATEGORY%</string>
+        <key>policy_template</key>
+        <string>%POLICY_TEMPLATE%</string>
+        <key>prod_name</key>
+        <string>%NAME%</string>
+        <key>self_service_description</key>
+        <string>%SELF_SERVICE_DESCRIPTION%</string>
+        <key>self_service_icon</key>
+        <string>%SELF_SERVICE_ICON%</string>
+        <key>pkg_path</key>
+        <string>%pkg_path%</string>
+      </dict>
+      <key>Processor</key>
+      <string>JSSImporter</string>
+    </dict>
+  </array>
+</dict>
+</plist>
