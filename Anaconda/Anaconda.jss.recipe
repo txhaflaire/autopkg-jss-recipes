@@ -45,7 +45,7 @@
         <key>self_service_icon</key>
         <string>%SELF_SERVICE_ICON%</string>
         <key>pkg_path</key>
-        <string>/Volumes/Data/AutoPkg/Cache/local.jss.Anaconda/downloads/Anaconda3-2020.07.pkg</string>
+        <string>/Volumes/Data/AutoPkg/Cache/local.jss.Anaconda/downloads/%NAME%%PYTHON_MAJOR_VERSION%-%version%.%INSTALLER_TYPE%</string>
       </dict>
       <key>Processor</key>
       <string>JSSImporter</string>
