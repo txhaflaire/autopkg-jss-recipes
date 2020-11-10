@@ -15,7 +15,7 @@
 		<key>NAME</key>
 		<string>Android Studio</string>
 		<key>POLICY_CATEGORY</key>
-		<string>Testing</string>
+		<string>Software - Unlicensed</string>
 		<key>POLICY_TEMPLATE</key>
 		<string>SelfServicePolicyTemplate.xml</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
