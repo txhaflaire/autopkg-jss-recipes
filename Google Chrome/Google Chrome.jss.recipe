@@ -14,12 +14,18 @@
 		<string>Patch Reporting: %NAME%</string>
 		<key>GROUP_TEMPLATE</key>
 		<string>ChromeSmartGroupTemplate.xml</string>
+		<key>SELFSERVICE_GROUP_TEMPLATE</key>
+		<string>SelfServiceSmartGroupTemplate.xml</string>
 		<key>NAME</key>
 		<string>GoogleChrome</string>
 		<key>POLICY_CATEGORY</key>
 		<string>Automatic Patch Management</string>
+		<key>SELFSERVICE_POLICY_CATEGORY</key>
+		<string>Software - Unlicensed</string>
 		<key>POLICY_TEMPLATE</key>
 		<string>ChromePolicyTemplate.xml</string>
+		<key>SELFSERVICE_POLICY_TEMPLATE</key>
+		<string>SelfServicePolicyTemplate.xml</string>
 		<key>POLICY_TRIGGER</key>
 		<string>Install_ChromeUpdate</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
@@ -75,6 +81,40 @@
 				<key>self_service_icon</key>
 				<string>%SELF_SERVICE_ICON%</string>
 			</dict>
+			<key>Processor</key>
+			<string>JSSImporter</string>
+		</dict>
+				<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>category</key>
+				<string>%CATEGORY%</string>
+				<key>groups</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>%GROUP_NAME%</string>
+						<key>smart</key>
+						<true/>
+						<key>template_path</key>
+						<string>%SELFSERVICE_GROUP_TEMPLATE%</string>
+					</dict>
+				</array>
+				<key>policy_category</key>
+				<string>%SELFSERVICE_POLICY_CATEGORY%</string>
+				<key>policy_template</key>
+				<string>%SELFSERVICE_POLICY_TEMPLATE%</string>
+				<key>prod_name</key>
+				<string>%NAME%</string>
+				<key>self_service_description</key>
+				<string>%SELF_SERVICE_DESCRIPTION%</string>
+				<key>self_service_icon</key>
+				<string>%SELF_SERVICE_ICON%</string>
+				<key>STOP_IF_NO_JSS_UPLOAD</key>
+				<string>False</string>
+			</dict>
+			<key>Comment</key>
+			<string>Self Service install policy</string>
 			<key>Processor</key>
 			<string>JSSImporter</string>
 		</dict>
