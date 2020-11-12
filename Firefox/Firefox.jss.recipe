@@ -107,7 +107,7 @@ combination is offered..</string>
 					</dict>
 				</array>
 				<key>policy_category</key>
-				<string>%POLICY_CATEGORY%</string>
+				<string>%SELFSERVICE_POLICY_CATEGORY%</string>
 				<key>policy_template</key>
 				<string>%SELFSERVICE_POLICY_TEMPLATE%</string>
 				<key>prod_name</key>
