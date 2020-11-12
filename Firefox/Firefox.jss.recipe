@@ -113,9 +113,6 @@ combination is offered..</string>
 				<key>self_service_icon</key>
 				<string>%SELF_SERVICE_ICON%</string>
 			</dict>
-			<key>Processor</key>
-			<string>JSSImporter</string>
-			</dict>
 			<key>Comment</key>
 			<string>Self Service install policy</string>
 			<key>Processor</key>
