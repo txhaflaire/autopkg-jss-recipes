@@ -96,6 +96,10 @@ combination is offered..</string>
 				<key>groups</key>
 				<array>
 					<dict>
+						key>name</key>
+						<string>%GROUP_NAME%</string>
+						<key>smart</key>
+						<true/>
 						<key>template_path</key>
 						<string>%SELFSERVICE_GROUP_TEMPLATE%</string>
 					</dict>
