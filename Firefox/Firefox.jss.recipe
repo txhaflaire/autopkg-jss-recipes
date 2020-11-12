@@ -88,16 +88,13 @@ combination is offered..</string>
 			<key>Processor</key>
 			<string>JSSImporter</string>
 		</dict>
-				<dict>
+		<dict>
 			<key>Arguments</key>
 			<dict>
 				<key>category</key>
 				<string>%CATEGORY%</string>
 				<key>groups</key>
 				<array>
-					<dict>
-						<key>smart</key>
-						<true/>
 						<key>template_path</key>
 						<string>%SELFSERVICE_GROUP_TEMPLATE%</string>
 					</dict>
