@@ -26,6 +26,8 @@ combination is offered..</string>
 		<string>Firefox</string>
 		<key>POLICY_CATEGORY</key>
 		<string>Automatic Patch Management</string>
+		<key>SELFSERVICE_POLICY_CATEGORY</key>
+		<string>Software - Unlicensed</string>
 		<key>POLICY_TEMPLATE</key>
 		<string>FirefoxPolicyTemplate.xml</string>
 		<key>SELFSERVICE_POLICY_TEMPLATE</key>
