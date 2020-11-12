@@ -95,6 +95,7 @@ combination is offered..</string>
 				<string>%CATEGORY%</string>
 				<key>groups</key>
 				<array>
+					<dict>
 						<key>template_path</key>
 						<string>%SELFSERVICE_GROUP_TEMPLATE%</string>
 					</dict>
