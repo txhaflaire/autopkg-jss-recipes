@@ -48,13 +48,6 @@
 			<dict>
 				<key>category</key>
 				<string>%CATEGORY%</string>
-				<key>extension_attributes</key>
-				<array>
-					<dict>
-						<key>ext_attribute_path</key>
-						<string>Wacom Intuos DriverExtensionAttribute.xml</string>
-					</dict>
-				</array>
 				<key>groups</key>
 				<array>
 					<dict>
@@ -78,6 +71,8 @@
 				<string>%SELF_SERVICE_DESCRIPTION%</string>
 				<key>self_service_icon</key>
 				<string>%SELF_SERVICE_ICON%</string>
+				<key>version</key>
+				<string>%version%</string>
 			</dict>
 			<key>Processor</key>
 			<string>JSSImporter</string>
