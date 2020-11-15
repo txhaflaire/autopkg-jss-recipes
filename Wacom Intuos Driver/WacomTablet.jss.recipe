@@ -32,6 +32,8 @@
 		<string>SelfServicePolicyTemplate.xml</string>
 		<key>SELFSERVICE_POLICY_CATEGORY</key>
 		<string>Software - Unlicensed</string>
+		<key>version</key>
+		<string>%version%</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>0.4.0</string>
