@@ -40,7 +40,7 @@
 		<string>ADESmartGroupTemplate.xml</string>
 		<key>ADE_POLICY_TRIGGER</key>
 		<string>DEP_GoogleChrome</string>
-		<key>SELFSERVICE_POLICY_CATEGORY</key>
+		<key>ADE_POLICY_CATEGORY</key>
 		<string>@Automated Device Enrollment</string>
 	</dict>
 	<key>MinimumVersion</key>
@@ -148,11 +148,11 @@
 				<string>%ADE_POLICY_CATEGORY%</string>
 				<key>policy_template</key>
 				<string>%ADE_POLICY_TEMPLATE%</string>
-				<key>policy_trigger</key>
+				<key>ade_policy_trigger</key>
 				<string>%ADE_POLICY_TRIGGER%</string>
 				<key>prod_name</key>
 				<string>%NAME%</string>
-				<key>policy_name</key>
+				<key>ade_policy_name</key>
 				<string>%ADE_POLICY_NAME%</string>
 				<key>self_service_description</key>
 				<string>%SELF_SERVICE_DESCRIPTION%</string>
