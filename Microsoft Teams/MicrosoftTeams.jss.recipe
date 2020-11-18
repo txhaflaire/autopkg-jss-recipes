@@ -33,7 +33,7 @@
 		<key>SELFSERVICE_POLICY_CATEGORY</key>
 		<string>Software - Unlicensed</string>
 		<key>ADE_POLICY_NAME</key>
-		<string>25 Microsoft Teams</string>
+		<string>26 Microsoft Teams</string>
 		<key>ADE_POLICY_TEMPLATE</key>
 		<string>ADEPolicyTemplate.xml</string>
 		<key>ADE_GROUP_TEMPLATE</key>

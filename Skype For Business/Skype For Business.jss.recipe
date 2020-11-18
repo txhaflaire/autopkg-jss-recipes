@@ -33,7 +33,7 @@
 		<key>SELFSERVICE_POLICY_CATEGORY</key>
 		<string>Software - Unlicensed</string>
 		<key>ADE_POLICY_NAME</key>
-		<string>24 Skype for Business</string>
+		<string>25 Skype for Business</string>
 		<key>ADE_POLICY_TEMPLATE</key>
 		<string>ADEPolicyTemplate.xml</string>
 		<key>ADE_GROUP_TEMPLATE</key>

@@ -25,7 +25,7 @@
             <key>DESCRIPTION</key>
             <string>Microsoft Office 365 is a software suite for word processing, spreadsheets, presentations, graphics and more.</string>
             <key>ADE_POLICY_NAME</key>
-            <string>22 Microsoft Office 365</string>
+            <string>23 Microsoft Office 365</string>
             <key>ADE_POLICY_TEMPLATE</key>
             <string>ADEPolicyTemplate.xml</string>
             <key>ADE_GROUP_TEMPLATE</key>
