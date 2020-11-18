@@ -36,6 +36,8 @@
 		<string>SelfServicePolicyTemplate.xml</string>
 		<key>SELFSERVICE_POLICY_CATEGORY</key>
 		<string>Software - Unlicensed</string>
+		<key>SELFSERVICE_GROUP_NAME</key>
+		<string>Self Service: Brave</string>
 		<key>ADE_POLICY_NAME</key>
 		<string>20 Brave</string>
 		<key>ADE_POLICY_TEMPLATE</key>
@@ -98,7 +100,7 @@
 				<array>
 					<dict>
 						<key>name</key>
-						<string>%GROUP_NAME%</string>
+						<string>%SELFSERVICE_GROUP_NAME%</string>
 						<key>smart</key>
 						<true/>
 						<key>template_path</key>
@@ -132,7 +134,7 @@
 				<array>
 					<dict>
 						<key>name</key>
-						<string>%GROUP_NAME%</string>
+						<string>%SELFSERVICE_GROUP_NAME%</string>
 						<key>smart</key>
 						<true/>
 						<key>template_path</key>
