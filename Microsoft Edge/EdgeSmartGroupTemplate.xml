@@ -1,0 +1,27 @@
+<computer_group>
+	<name>%GROUP_NAME%</name>
+	<is_smart>true</is_smart>
+	<criteria>
+		<criterion>
+			<name>Application Title</name>
+			<priority>0</priority>
+			<and_or>and</and_or>
+			<search_type>is</search_type>
+			<value>Microsoft Edge.app</value>
+		</criterion>
+		<criterion>
+			<name>Application Version</name>
+			<priority>1</priority>
+			<and_or>and</and_or>
+			<search_type>does not match regex</search_type>
+			<value>%version_regex%</value>
+		</criterion>
+		<criterion>
+			<name>Alerter - Installation Status</name>
+			<priority>2</priority>
+			<and_or>and</and_or>
+			<search_type>is</search_type>
+			<value>Installed</value>
+		</criterion>
+	</criteria>
+</computer_group>

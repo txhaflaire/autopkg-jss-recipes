@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Comment</key>
+	<string>Created with Recipe Robot v1.2.1 (https://github.com/homebysix/recipe-robot)</string>
+	<key>Description</key>
+	<string>Downloads the latest version of Microsoft Edge and imports it into your JSS.</string>
+	<key>Identifier</key>
+	<string>com.github.txhaflaire.jss.MicrosoftEdge</string>
+	<key>Input</key>
+	<dict>
+		<key>APP_FILENAME</key>
+		<string>MicrosoftEdge</string>
+		<key>CATEGORY</key>
+		<string>Software - Unlicensed</string>
+		<key>GROUP_NAME</key>
+		<string>Patch Reporting: %NAME%</string>
+		<key>GROUP_TEMPLATE</key>
+		<string>EdgeSmartGroupTemplate.xml</string>
+		<key>NAME</key>
+		<string>Microsoft Edge</string>
+		<key>POLICY_CATEGORY</key>
+		<string>Automatic Patch Management</string>
+		<key>POLICY_TEMPLATE</key>
+		<string>EdgePolicyTemplate.xml</string>
+		<key>POLICY_TRIGGER</key>
+		<string>Install_EdgeUpdate</string>
+		<key>SELF_SERVICE_DESCRIPTION</key>
+		<string>Microsoft Edge is an internet browser made by Microsoft, which is installed by default on all new Windows computers. Edge was made to replace Internet Explorer, and runs faster and with more features.</string>
+		<key>SELF_SERVICE_ICON</key>
+		<string>%NAME%.png</string>
+		<key>SELFSERVICE_GROUP_TEMPLATE</key>
+		<string>SelfServiceSmartGroupTemplate.xml</string>
+		<key>SELFSERVICE_POLICY_TEMPLATE</key>
+		<string>SelfServicePolicyTemplate.xml</string>
+		<key>SELFSERVICE_POLICY_CATEGORY</key>
+		<string>Software - Unlicensed</string>
+		<key>ADE_POLICY_NAME</key>
+		<string>21 Microsoft Edge</string>
+		<key>ADE_POLICY_TEMPLATE</key>
+		<string>ADEPolicyTemplate.xml</string>
+		<key>ADE_GROUP_TEMPLATE</key>
+		<string>ADESmartGroupTemplate.xml</string>
+		<key>ADE_POLICY_TRIGGER</key>
+		<string>DEP_MSEdge</string>
+		<key>ADE_POLICY_CATEGORY</key>
+		<string>@Automated Device Enrollment</string>
+	</dict>
+	<key>MinimumVersion</key>
+	<string>1.0.0</string>
+	<key>ParentRecipe</key>
+	<string>com.github.rtrouton.pkg.microsoftedge</string>
+	<key>Process</key>
+	<array>
+	<dict>
+		<key>Processor</key>
+		<string>com.github.grahampugh.recipes.commonprocessors/VersionRegexGenerator</string>
+	</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>category</key>
+				<string>%CATEGORY%</string>
+				<key>groups</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>%GROUP_NAME%</string>
+						<key>smart</key>
+						<true/>
+						<key>template_path</key>
+						<string>%GROUP_TEMPLATE%</string>
+					</dict>
+				</array>
+				<key>policy_category</key>
+				<string>%POLICY_CATEGORY%</string>
+				<key>policy_template</key>
+				<string>%POLICY_TEMPLATE%</string>
+				<key>prod_name</key>
+				<string>%NAME%</string>
+				<key>self_service_description</key>
+				<string>%SELF_SERVICE_DESCRIPTION%</string>
+				<key>self_service_icon</key>
+				<string>%SELF_SERVICE_ICON%</string>
+			</dict>
+			<key>Processor</key>
+			<string>JSSImporter</string>
+		</dict>
+				<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>category</key>
+				<string>%CATEGORY%</string>
+				<key>groups</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>%GROUP_NAME%</string>
+						<key>smart</key>
+						<true/>
+						<key>template_path</key>
+						<string>%SELFSERVICE_GROUP_TEMPLATE%</string>
+					</dict>
+				</array>
+				<key>policy_category</key>
+				<string>%SELFSERVICE_POLICY_CATEGORY%</string>
+				<key>policy_template</key>
+				<string>%SELFSERVICE_POLICY_TEMPLATE%</string>
+				<key>prod_name</key>
+				<string>%NAME%</string>
+				<key>self_service_description</key>
+				<string>%SELF_SERVICE_DESCRIPTION%</string>
+				<key>self_service_icon</key>
+				<string>%SELF_SERVICE_ICON%</string>
+				<key>STOP_IF_NO_JSS_UPLOAD</key>
+				<string>False</string>
+			</dict>
+			<key>Comment</key>
+			<string>Self Service install policy</string>
+			<key>Processor</key>
+			<string>JSSImporter</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>category</key>
+				<string>%CATEGORY%</string>
+				<key>groups</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>%GROUP_NAME%</string>
+						<key>smart</key>
+						<true/>
+						<key>template_path</key>
+						<string>%ADE_GROUP_TEMPLATE%</string>
+					</dict>
+				</array>
+				<key>policy_category</key>
+				<string>%ADE_POLICY_CATEGORY%</string>
+				<key>policy_template</key>
+				<string>%ADE_POLICY_TEMPLATE%</string>
+				<key>ade_policy_trigger</key>
+				<string>%ADE_POLICY_TRIGGER%</string>
+				<key>prod_name</key>
+				<string>%NAME%</string>
+				<key>ade_policy_name</key>
+				<string>%ADE_POLICY_NAME%</string>
+				<key>self_service_description</key>
+				<string>%SELF_SERVICE_DESCRIPTION%</string>
+				<key>self_service_icon</key>
+				<string>%SELF_SERVICE_ICON%</string>
+				<key>STOP_IF_NO_JSS_UPLOAD</key>
+				<string>False</string>
+			</dict>
+			<key>Comment</key>
+			<string>Automated Device Enrollment install policy</string>
+			<key>Processor</key>
+			<string>JSSImporter</string>
+		</dict>
+	</array>
+</dict>
+</plist>
