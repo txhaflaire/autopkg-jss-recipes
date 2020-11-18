@@ -37,7 +37,7 @@
 		<key>SELFSERVICE_POLICY_CATEGORY</key>
 		<string>Software - Unlicensed</string>
 		<key>SELFSERVICE_GROUP_NAME</key>
-		<string>Self Service: Brave</string>
+		<string>All Managed Clients</string>
 		<key>ADE_POLICY_NAME</key>
 		<string>20 Brave</string>
 		<key>ADE_POLICY_TEMPLATE</key>
