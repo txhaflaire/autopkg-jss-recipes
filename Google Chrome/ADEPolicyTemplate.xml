@@ -1,0 +1,43 @@
+<policy>
+	<general>
+		<name>%POLICY_NAME%</name>
+		<enabled>true</enabled>
+		<trigger_checkin>false</trigger_checkin>
+		<trigger_enrollment_complete>false</trigger_enrollment_complete>
+		<trigger_login>false</trigger_login>
+		<trigger_logout>false</trigger_logout>
+		<trigger_network_state_changed>false</trigger_network_state_changed>
+		<trigger_startup>false</trigger_startup>
+		<trigger_other>%POLICY_TRIGGER%</trigger_other>
+		<frequency>Ongoing</frequency>
+		<category>
+			<name>%POLICY_CATEGORY%</name>
+		</category>
+	</general>
+	<scope>
+        <all_computers>true</all_computers>
+    </scope>
+	<package_configuration>
+		<!--Package added by JSSImporter-->
+	</package_configuration>
+	<scripts>
+		<!--Scripts added by JSSImporter-->
+	</scripts>
+	<self_service>
+		<use_for_self_service>false</use_for_self_service>
+		<self_service_display_name>%PROD_NAME%</self_service_display_name>
+		<install_button_text></install_button_text>
+		<reinstall_button_text></reinstall_button_text>
+		<self_service_description></self_service_description>
+	</self_service>
+	<maintenance>
+		<recon>false</recon>
+	</maintenance>
+	<user_interaction>
+    	<message_start></message_start>
+    	<allow_users_to_defer>false</allow_users_to_defer>
+    	<allow_deferral_until_utc/>
+    	<allow_deferral_minutes>0</allow_deferral_minutes>
+    	<message_finish></message_finish>
+  </user_interaction>
+</policy>
