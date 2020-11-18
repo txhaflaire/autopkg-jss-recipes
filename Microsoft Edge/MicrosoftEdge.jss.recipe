@@ -92,17 +92,6 @@
 			<dict>
 				<key>category</key>
 				<string>%CATEGORY%</string>
-				<key>groups</key>
-				<array>
-					<dict>
-						<key>name</key>
-						<string>All managed macOS devices</string>
-						<key>smart</key>
-						<true/>
-						<key>template_path</key>
-						<string>%SELFSERVICE_GROUP_TEMPLATE%</string>
-					</dict>
-				</array>
 				<key>policy_category</key>
 				<string>%SELFSERVICE_POLICY_CATEGORY%</string>
 				<key>policy_template</key>
@@ -126,17 +115,6 @@
 			<dict>
 				<key>category</key>
 				<string>%CATEGORY%</string>
-				<key>groups</key>
-				<array>
-					<dict>
-						<key>name</key>
-						<string>%GROUP_NAME%</string>
-						<key>smart</key>
-						<true/>
-						<key>template_path</key>
-						<string>%ADE_GROUP_TEMPLATE%</string>
-					</dict>
-				</array>
 				<key>policy_category</key>
 				<string>%ADE_POLICY_CATEGORY%</string>
 				<key>policy_template</key>
