@@ -26,6 +26,16 @@
 		<string>Install the latest version of %NAME%.</string>
 		<key>SELF_SERVICE_ICON</key>
 		<string>Skype For Business.png</string>
+		<key>ADE_POLICY_NAME</key>
+		<string>24 Skype for Business</string>
+		<key>ADE_POLICY_TEMPLATE</key>
+		<string>ADEPolicyTemplate.xml</string>
+		<key>ADE_GROUP_TEMPLATE</key>
+		<string>ADESmartGroupTemplate.xml</string>
+		<key>ADE_POLICY_TRIGGER</key>
+		<string>DEP_SkypeforBusiness</string>
+		<key>ADE_POLICY_CATEGORY</key>
+		<string>@Automated Device Enrollment</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>0.4.0</string>
@@ -68,6 +78,44 @@
 				<key>version</key>
 				<string>%version%</string>
 			</dict>
+			<key>Processor</key>
+			<string>JSSImporter</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>category</key>
+				<string>%CATEGORY%</string>
+				<key>groups</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>%GROUP_NAME%</string>
+						<key>smart</key>
+						<true/>
+						<key>template_path</key>
+						<string>%ADE_GROUP_TEMPLATE%</string>
+					</dict>
+				</array>
+				<key>policy_category</key>
+				<string>%ADE_POLICY_CATEGORY%</string>
+				<key>policy_template</key>
+				<string>%ADE_POLICY_TEMPLATE%</string>
+				<key>ade_policy_trigger</key>
+				<string>%ADE_POLICY_TRIGGER%</string>
+				<key>prod_name</key>
+				<string>%NAME%</string>
+				<key>ade_policy_name</key>
+				<string>%ADE_POLICY_NAME%</string>
+				<key>self_service_description</key>
+				<string>%SELF_SERVICE_DESCRIPTION%</string>
+				<key>self_service_icon</key>
+				<string>%SELF_SERVICE_ICON%</string>
+				<key>STOP_IF_NO_JSS_UPLOAD</key>
+				<string>False</string>
+			</dict>
+			<key>Comment</key>
+			<string>Automated Device Enrollment install policy</string>
 			<key>Processor</key>
 			<string>JSSImporter</string>
 		</dict>
