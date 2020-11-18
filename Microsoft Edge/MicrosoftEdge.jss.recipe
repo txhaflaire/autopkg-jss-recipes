@@ -96,7 +96,7 @@
 				<array>
 					<dict>
 						<key>name</key>
-						<string>%GROUP_NAME%</string>
+						<string>All managed macOS devices</string>
 						<key>smart</key>
 						<true/>
 						<key>template_path</key>
