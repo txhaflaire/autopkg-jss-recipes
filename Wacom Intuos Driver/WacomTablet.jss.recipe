@@ -83,7 +83,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>category</key>
-				<string>%CATEGORY%</string>
+				<string>%CATEGORY%</string>	
 				<key>policy_category</key>
 				<string>%SELFSERVICE_POLICY_CATEGORY%</string>
 				<key>policy_template</key>
