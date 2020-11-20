@@ -46,7 +46,7 @@
 	<key>MinimumVersion</key>
 	<string>0.4.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.autopkg.pkg.googlechrome</string>
+	<string>com.github.txhaflaire.pkg.googlechromeuniversal</string>
 	<key>Process</key>
 	<array>
 	<dict>
