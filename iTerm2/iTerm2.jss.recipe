@@ -17,7 +17,7 @@
             <key>POLICY_TEMPLATE</key>
             <string>%RECIPE_DIR%/SelfServicePolicyTemplate.xml</string>
             <key>ICON</key>
-            <string>%RECIPE_DIR%/MicrosoftOffice365BusinessProSuite.png</string>
+            <string>%RECIPE_DIR%/iTerm2.png</string>
             <key>GROUP_TEMPLATE</key>
             <string>%RECIPE_DIR%/SelfServiceSmartGroupTemplate.xml</string>
             <key>DESCRIPTION</key>
