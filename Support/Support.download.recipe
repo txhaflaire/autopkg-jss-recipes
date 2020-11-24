@@ -20,8 +20,6 @@
 		<dict>
 			<key>Arguments</key>
 			<dict>
-				<key>asset_regex</key>
-				<string>.*\.tgz$</string>
 				<key>github_repo</key>
 				<string>%GITHUB_REPO%</string>
 			</dict>
