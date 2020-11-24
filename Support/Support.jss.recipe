@@ -24,6 +24,14 @@
 		<string>MenuBar app providing support channels for reaching out to IT.</string>
 		<key>SELF_SERVICE_ICON</key>
 		<string>Lifesaver.png</string>
+		<key>SELFSERVICE_GROUP_TEMPLATE</key>
+		<string>SelfServiceSmartGroupTemplate.xml</string>
+		<key>SELFSERVICE_POLICY_CATEGORY</key>
+		<string>Software - Unlicensed</string>
+		<key>SELFSERVICE_POLICY_TEMPLATE</key>
+		<string>SelfServicePolicyTemplate.xml</string>
+		<key>SELF_SERVICE_DESCRIPTION</key>
+		<string>Install the latest version of %NAME%.</string>
 		<key>ADE_POLICY_NAME</key>
 		<string>28 Support App</string>
 		<key>ADE_POLICY_TEMPLATE</key>
