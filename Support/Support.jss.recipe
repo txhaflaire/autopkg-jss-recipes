@@ -23,7 +23,7 @@
 		<key>SELF_SERVICE_DESCRIPTION</key>
 		<string>MenuBar app providing support channels for reaching out to IT.</string>
 		<key>SELF_SERVICE_ICON</key>
-		<string>%NAME%.png</string>
+		<string>Lifesaver.png</string>
 		<key>ADE_POLICY_NAME</key>
 		<string>28 Support App</string>
 		<key>ADE_POLICY_TEMPLATE</key>
