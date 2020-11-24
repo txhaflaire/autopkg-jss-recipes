@@ -21,9 +21,19 @@
 		<key>POLICY_TEMPLATE</key>
 		<string>PolicyTemplate.xml</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
-		<string>The Support App is developed by Root3, specialized in managing Apple devices. Root3 offers consultancy and support for organizations to get the most out of their Apple devices and is based in The Netherlands (Haarlem).</string>
+		<string>MenuBar app providing support channels for reaching out to IT.</string>
 		<key>SELF_SERVICE_ICON</key>
 		<string>%NAME%.png</string>
+		<key>ADE_POLICY_NAME</key>
+		<string>28 Support App</string>
+		<key>ADE_POLICY_TEMPLATE</key>
+		<string>ADEPolicyTemplate.xml</string>
+		<key>ADE_GROUP_TEMPLATE</key>
+		<string>ADESmartGroupTemplate.xml</string>
+		<key>ADE_POLICY_TRIGGER</key>
+		<string>DEP_SupportApp</string>
+		<key>ADE_POLICY_CATEGORY</key>
+		<string>@Automated Device Enrollment</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
@@ -31,6 +41,10 @@
 	<string>com.github.txhaflaire.pkg.Support</string>
 	<key>Process</key>
 	<array>
+		<dict>
+			<key>Processor</key>
+			<string>com.github.grahampugh.recipes.commonprocessors/VersionRegexGenerator</string>
+		</dict>
 		<dict>
 			<key>Arguments</key>
 			<dict>
@@ -58,6 +72,58 @@
 				<key>self_service_icon</key>
 				<string>%SELF_SERVICE_ICON%</string>
 			</dict>
+			<key>Comment</key>
+			<string>Automatic Patch policy</string>
+			<key>Processor</key>
+			<string>JSSImporter</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>category</key>
+				<string>%CATEGORY%</string>
+				<key>policy_category</key>
+				<string>%SELFSERVICE_POLICY_CATEGORY%</string>
+				<key>policy_template</key>
+				<string>%SELFSERVICE_POLICY_TEMPLATE%</string>
+				<key>prod_name</key>
+				<string>%NAME%</string>
+				<key>self_service_description</key>
+				<string>%SELF_SERVICE_DESCRIPTION%</string>
+				<key>self_service_icon</key>
+				<string>%SELF_SERVICE_ICON%</string>
+				<key>STOP_IF_NO_JSS_UPLOAD</key>
+				<string>False</string>
+			</dict>
+			<key>Comment</key>
+			<string>Self Service install policy</string>
+			<key>Processor</key>
+			<string>JSSImporter</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>category</key>
+				<string>%CATEGORY%</string>
+				<key>policy_category</key>
+				<string>%ADE_POLICY_CATEGORY%</string>
+				<key>policy_template</key>
+				<string>%ADE_POLICY_TEMPLATE%</string>
+				<key>ade_policy_trigger</key>
+				<string>%ADE_POLICY_TRIGGER%</string>
+				<key>prod_name</key>
+				<string>%NAME%</string>
+				<key>ade_policy_name</key>
+				<string>%ADE_POLICY_NAME%</string>
+				<key>self_service_description</key>
+				<string>%SELF_SERVICE_DESCRIPTION%</string>
+				<key>self_service_icon</key>
+				<string>%SELF_SERVICE_ICON%</string>
+				<key>STOP_IF_NO_JSS_UPLOAD</key>
+				<string>False</string>
+			</dict>
+			<key>Comment</key>
+			<string>Automated Device Enrollment install policy</string>
 			<key>Processor</key>
 			<string>JSSImporter</string>
 		</dict>
