@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Downloads the latest version of scout.</string>
+	<string>Downloads the latest version of Support.</string>
 	<key>Identifier</key>
-	<string>com.github.txhaflaire.download.scout</string>
+	<string>com.github.txhaflaire.download.Support</string>
 	<key>Input</key>
 	<dict>
 		<key>GITHUB_REPO</key>
